@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Code, Puzzle, Globe, Smartphone, Palette, X, Blend } from 'lucide-react';
-import SkillGraph from '@/components/g6/SkillGraph';
+// import SkillGraph from '@/components/g6/SkillGraph';
 
 const skills = [
   {
@@ -215,7 +215,7 @@ export default function About() {
             <X size={20} />
           </button>
           <h4 className="text-2xl font-bold mb-4">技能介绍</h4>
-          <SkillGraph />
+          {/* <SkillGraph /> */}
         </motion.div>
       </div>
 

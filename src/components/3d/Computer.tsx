@@ -2,7 +2,7 @@
 
 import { useRef, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Environment, OrbitControls, ContactShadows, Text, Html } from '@react-three/drei';
+import { Environment, OrbitControls, ContactShadows, Html } from '@react-three/drei';
 import * as THREE from 'three';
 
 interface ComputerModelProps {
@@ -14,7 +14,7 @@ function ComputerModel(props: ComputerModelProps) {
   const screenRef = useRef<THREE.Mesh>(null);
   const [hovered, setHovered] = useState(false);
   const [time, setTime] = useState(0);
-  const [isTyping, setIsTyping] = useState(false);
+//   const [isTyping, setIsTyping] = useState(false);
 
   // 动画文本内容
   const [displayText, setDisplayText] = useState('');
@@ -44,7 +44,7 @@ function ComputerModel(props: ComputerModelProps) {
     }
   }, [textIndex, fullText]);
 
-  useFrame((state) => {
+  useFrame(() => {
     if (ref.current) {
       // 平滑旋转与悬停动画
       ref.current.rotation.y = THREE.MathUtils.lerp(

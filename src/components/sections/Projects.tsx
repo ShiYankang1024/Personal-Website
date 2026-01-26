@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Route, Eye, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import projectsData from '@/data/projects.json';
-import ProjectGraph from '@/components/g6/ProjectGraph';
+// import ProjectGraph from '@/components/g6/ProjectGraph';
 
 type Project = {
   title: string;
@@ -417,7 +417,7 @@ export default function Projects() {
             <X size={20} />
           </button>
           <h4 className="text-2xl font-bold mb-4">项目详情</h4>
-          <ProjectGraph />
+          {/* <ProjectGraph /> */}
         </motion.div>
       </div>
     </section>
