@@ -3,77 +3,77 @@
     "title": "智能电网巡检系统",
     "description": "负责系统前端框架搭建和文档撰写，参与 3D 模型交互与海康摄像机视频管理等。",
     "technologies": ["Vue3", "Three.js", "Socket", "RTSP", "Blender"],
-    "image": "/imgs/AI1.png",
+    "image": "/imgs/AI1.jpg",
     "github": "https://github.com",
     "live": "https://example.com",
     "featured": true,
     "model": null,
-    "screenshots": ["/imgs/XJ0.png", "/imgs/XJ1.jpg", "/imgs/XJ2.jpg", "/imgs/XJ3.jpg", "/imgs/XJ4.jpg", "/imgs/XJ5.jpg"]
+    "screenshots": ["/imgs/XJ0.jpg", "/imgs/XJ1.jpg", "/imgs/XJ2.jpg", "/imgs/XJ3.jpg", "/imgs/XJ4.jpg", "/imgs/XJ5.jpg"]
   },
   {
     "title": "工业 AI 视觉算法平台",
     "description": "负责数据集管理、数据标注等前端开发，实现 2D/3D 数据 Web 可视化，并调研相关新技术。",
     "technologies": ["Vue3", "Three.js", "Echarts", "TailWindCss", "Canvas"],
-    "image": "/imgs/AI2.png",
+    "image": "/imgs/AI2.jpg",
     "github": "https://github.com/DongMenKant/canvas-select-plus",
     "live": "https://www.npmjs.com/package/canvas-select-plus",
     "featured": true,
     "model": null,
-    "screenshots": ["/imgs/AI0.png", "/imgs/AI1.png", "/imgs/AI2.png", "/imgs/AI3.png", "/imgs/AI4.png", "/imgs/AI5.png"]
+    "screenshots": ["/imgs/AI0.jpg", "/imgs/AI1.jpg", "/imgs/AI2.jpg", "/imgs/AI3.jpg", "/imgs/AI4.jpg", "/imgs/AI5.jpg"]
   },
   {
     "title": "农村集体三资管理平台",
     "description": "负责前期需求调研，可视化大屏、管理平台和小程序的前端开发工作。",
     "technologies": ["Vue3", "UniApp", "WotUI", "Leaflet", "DataV", "Echarts"],
-    "image": "/imgs/SZ1.png",
+    "image": "/imgs/SZ1.jpg",
     "github": "https://github.com",
     "live": "https://example.com",
     "featured": true,
     "model": null,
-    "screenshots": ["/imgs/SZ1.png"]
+    "screenshots": ["/imgs/SZ1.jpg"]
   },
   {
     "title": "健身日志 APP",
     "description": "自研健身日志 APP，基于 Pixso 设计稿，使用 Uni-app + WotUI + UnoCSS 开发，支持训练计划与记录。",
     "technologies": ["Uni-app", "WotUI", "Next.js", "MongoDB"],
-    "image": "/imgs/AI4.png",
+    "image": "/imgs/AI4.jpg",
     "github": "https://github.com/DongMenKant/fitness-diary-vue-uniapp",
     "live": "",
     "featured": false,
     "model": "/models/GasolineBarrel.glb",
-    "screenshots": ["/imgs/JS1.png", "/imgs/JS2.png"]
+    "screenshots": ["/imgs/JS1.jpg", "/imgs/JS2.jpg"]
   },
   {
     "title": "Canvas-Select-Plus",
     "description": "基于 Canvas 的 2D 图像标注组件，支持多种几何标注与撤销重做，配备 SAM 智能标注接口。",
     "technologies": ["Canvas", "JavaScript"],
-    "image": "/imgs/AI5.png",
+    "image": "/imgs/AI5.jpg",
     "github": "https://github.com/DongMenKant/canvas-select-plus",
     "live": "https://dongmenkant.github.io/canvas-select-plus/",
     "featured": false,
     "model": "/models/Roadblock.glb",
-    "screenshots": ["/imgs/CSP.png"]
+    "screenshots": ["/imgs/CSP.jpg"]
   },
   {
     "title": "UE 搭建电影级场景",
     "description": "使用 UE5.5.2 和 Tripo3D 生成模型，搭建电影级公路场景。",
     "technologies": ["UE5", "Tripo 3D"],
-    "image": "/imgs/AI1.png",
+    "image": "/imgs/AI1.jpg",
     "github": "",
     "live": "",
     "featured": false,
     "model": null,
-    "screenshots": ["/imgs/UE1.png", "/imgs/UE2.png", "/imgs/UE3.png", "/imgs/UE4.png"]
+    "screenshots": ["/imgs/UE1.jpg", "/imgs/UE2.jpg", "/imgs/UE3.jpg", "/imgs/UE4.jpg"]
   },
   {
-    "title": "2D 像素风横版闯关游戏",
-    "description": "基于 Unity 的像素风横版闯关，包含角色动画、音效与转场等内容。",
+    "title": "梦魇战士——3D射击类闯关游戏",
+    "description": "通过Unity引擎，利用开源素材开发的第三人称3D射击类闯关游戏，涉及多种敌人和关卡。",
     "technologies": ["Unity", "C#"],
-    "image": "/imgs/AI1.png",
+    "image": "/imgs/ShootGame1.jpg",
     "github": "",
-    "live": "",
+    "live": "https://shiyankang1024.github.io/ShootGameWebGL/",
     "featured": false,
     "model": null,
-    "screenshots": ["/imgs/UE1.png", "/imgs/UE2.png", "/imgs/UE3.png", "/imgs/UE4.png"]
+    "screenshots": ["/imgs/ShootGame1.jpg", "/imgs/ShootGame2.jpg", "/imgs/ShootGame3.jpg", "/imgs/ShootGame4.jpg"]
   }
 ]
