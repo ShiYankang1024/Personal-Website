@@ -75,5 +75,16 @@
     "featured": false,
     "model": null,
     "screenshots": ["/imgs/ShootGame1.jpg", "/imgs/ShootGame2.jpg", "/imgs/ShootGame3.jpg", "/imgs/ShootGame4.jpg"]
+  },
+    {
+    "title": "《无尽幸存者》—2D类幸存者游戏",
+    "description": "ͨ类幸存者肉鸽游戏，2D像素风，基于QFramework框架开发。",
+    "technologies": ["Unity", "C#"],
+    "image": "/imgs/EndlessSurvivors.png",
+    "github": "",
+    "live": "",
+    "featured": false,
+    "model": null,
+    "screenshots": ["/imgs/EndlessSurvivors.png", "/imgs/EndlessSurvivors1.png"]
   }
 ]
