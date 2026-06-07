@@ -25,7 +25,7 @@ const skills = [
     description: 'Canvas, Echarts, Three.js',
   },
   {
-    name: '建模工具',
+    name: '游戏开发',
     icon: Blend,
     color: 'from-purple-500 to-pink-500',
     description: 'Blender, Unity, UE',
@@ -102,7 +102,7 @@ export default function About() {
             </motion.h3>
             <div className="space-y-8 text-gray-300 text-lg leading-relaxed font-light">
               <p>
-                我是一名软件开发工程师，热衷于助力企业数字化、智能化转型，打造沉浸式数字体验。目前，我具备1-2年的软件开发（前端）工作经验，凭借 Vue3、React、Next.js、Uni-app、Three.js 和现代 Web 技术方面的专业知识，我能够通过简洁的代码和创新的解决方案，将创意变为现实。
+                我是一名软件开发工程师，热衷于助力企业数字化、智能化转型，打造沉浸式数字体验。目前，我具备2年的软件开发工作经验，凭借 Vue3、React、Next.js、Uni-app、Three.js 和现代 Web 技术方面的专业知识，我能够通过简洁的代码和创新的解决方案，将创意变为现实。
               </p>
               <p>
                 我对 3D 视觉呈现与交互充满热情，具备 WebGL 基础，并自学了 Blender 建模与 Unity 游戏编程，了解建模流程及着色器等核心概念，能够参与三维场景的构建与实现。
@@ -166,7 +166,7 @@ export default function About() {
               'Tailwind CSS',
               'Git',
               'Uni-app',
-              'Leaflet',
+              'Unity',
               'Echarts',
               'Blender',
             ].map((tech, index) => (

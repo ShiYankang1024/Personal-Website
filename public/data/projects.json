@@ -30,7 +30,7 @@
     "live": "https://example.com",
     "featured": true,
     "model": null,
-    "screenshots": ["/imgs/SZ1.jpg"]
+    "screenshots": ["/imgs/SZ1.jpg", "/imgs/SZ2.png", "/imgs/SZ3.png", "/imgs/SZ4.png"]
   },
   {
     "title": "健身日志APP",

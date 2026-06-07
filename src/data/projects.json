@@ -30,7 +30,7 @@
     "live": "https://example.com",
     "featured": true,
     "model": null,
-    "screenshots": ["/imgs/SZ1.jpg"]
+    "screenshots": ["/imgs/SZ1.jpg", "/imgs/SZ2.png", "/imgs/SZ3.png", "/imgs/SZ4.png"]
   },
   {
     "title": "健身日志 APP",
@@ -74,11 +74,11 @@
     "live": "https://shiyankang1024.github.io/ShootGameWebGL/",
     "featured": false,
     "model": null,
-    "screenshots": ["/imgs/ShootGame1.jpg", "/imgs/ShootGame2.jpg", "/imgs/ShootGame3.jpg", "/imgs/ShootGame4.jpg"]
+    "screenshots": ["/imgs/ShootGame1.png", "/imgs/ShootGame2.png", "/imgs/ShootGame3.png", "/imgs/ShootGame4.png", "/imgs/ShootGame5.png", "/imgs/ShootGame6.png", "/imgs/ShootGame7.png"]
   },
     {
     "title": "《无尽幸存者》—2D类幸存者游戏",
-    "description": "ͨ类幸存者肉鸽游戏，2D像素风，基于QFramework框架开发。",
+    "description": "类幸存者肉鸽游戏，2D像素风，基于QFramework框架开发。",
     "technologies": ["Unity", "C#"],
     "image": "/imgs/EndlessSurvivors.png",
     "github": "",

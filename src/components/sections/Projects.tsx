@@ -172,13 +172,15 @@ export default function Projects() {
               <div className="relative flex flex-col items-center">
                 {hasScreenshots ? (
                   <div className="relative mx-auto h-[550px] w-[1150px] overflow-hidden rounded-2xl border border-white/10 bg-black/40">
-                    <Image
-                      src={currentScreenshotSrc ?? ''}
-                      alt={`${selectedProject.title} preview image`}
-                      fill
-                      sizes="(min-width: 1280px) 1150px, 100vw"
-                      className="object-cover transition-transform duration-500"
-                    />
+                   <div className="absolute inset-1">
+                        <Image
+                        src={currentScreenshotSrc ?? ''}
+                        alt={`${selectedProject.title} preview image`}
+                        fill
+                        sizes="(min-width: 960px) 1150px, 100vw"
+                        className="object-contain transition-transform duration-500"
+                        />
+                    </div>
                   </div>
                 ) : (
                   <div className="flex h-[300px] w-[400px] items-center justify-center rounded-2xl border border-dashed border-white/20 bg-black/40 p-12 text-center text-gray-300">
