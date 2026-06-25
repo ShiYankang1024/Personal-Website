@@ -17,12 +17,18 @@ type Project = {
   featured: boolean;
   model: string | null;
   screenshots: string[];
+  detail?: {
+    overview: string;
+    role: string;
+    highlights: string[];
+  };
 };
 
 const projects: Project[] = projectsData as Project[];
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<(typeof projects)[number] | null>(null);
+  const [selectedDetailProject, setSelectedDetailProject] = useState<(typeof projects)[number] | null>(null);
   const [currentScreenshotIndex, setCurrentScreenshotIndex] = useState(0);
 
   const modalScreenshots =
@@ -110,7 +116,15 @@ export default function Projects() {
     : null;
 
   const [showProjectModal, setShowProjectModal] = useState(false);
-  const closeModal = () => setShowProjectModal(false);
+  const closeModal = () => {
+    setShowProjectModal(false);
+    setSelectedDetailProject(null);
+  };
+
+  const handleOpenProjectDetail = (project: (typeof projects)[number]) => {
+    setSelectedDetailProject(project);
+    setShowProjectModal(true);
+  };
 
   return (
     <section
@@ -215,7 +229,10 @@ export default function Projects() {
           </div>
         )}
 
-        <div className="grid lg:grid-cols-3 gap-12 mb-20">
+        <div
+          data-guide="project-featured"
+          className="grid lg:grid-cols-3 gap-12 mb-20"
+        >
           {projects
             .filter((p) => p.featured)
             .map((project, index) => (
@@ -248,9 +265,9 @@ export default function Projects() {
                     </button>
                     <button
                       type="button"
-                      onClick={() => setShowProjectModal(true)}
+                      onClick={() => handleOpenProjectDetail(project)}
                       className="p-4 bg-white/20 rounded-full hover:bg-white/30 transition-all duration-300 transform hover:scale-110"
-                      aria-label={`Preview ${project.title} gallery`}
+                      aria-label={`查看 ${project.title} 项目详情`}
                     >
                       <Route size={28} className="text-white" />
                     </button>
@@ -311,7 +328,8 @@ export default function Projects() {
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-black mb-12 text-white">
             更多作品
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div data-guide="project-more"
+                className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects
               .filter((p) => !p.featured)
               .map((project, index) => (
@@ -372,6 +390,17 @@ export default function Projects() {
                         className="text-gray-300 hover:text-white"
                       />
                     </a>)}
+                    <button
+                      type="button"
+                      onClick={() => handleOpenProjectDetail(project)}
+                      className="p-3 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/10 hover:border-white/20"
+                      aria-label={`查看 ${project.title} 项目详情`}
+                    >
+                      <Route
+                        size={18}
+                        className="text-gray-300 hover:text-white"
+                      />
+                    </button>
                     {project.live&&(<a
                       href={project.live}
                       target="_blank"
@@ -407,26 +436,79 @@ export default function Projects() {
               : { opacity: 0, scale: 0.95, y: 20 }
           }
           transition={{ duration: 0.2 }}
-          className="relative max-w-6xl w-full rounded-3xl bg-white/10 backdrop-blur-xl border border-white/15 p-10 text-white shadow-2xl min-h-[70vh]"
+          className="relative max-h-[88vh] max-w-6xl w-full overflow-y-auto rounded-3xl bg-slate-950/95 backdrop-blur-xl border border-white/15 p-6 text-white shadow-2xl sm:p-8 lg:p-10"
           onClick={(event) => event.stopPropagation()}
         >
           <button
             type="button"
             onClick={closeModal}
             className="absolute right-4 top-4 text-sm px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
-            aria-label="关闭技能介绍弹窗"
+            aria-label="关闭项目详情弹窗"
           >
             <X size={20} />
           </button>
-          <h4 className="text-2xl font-bold mb-4">项目详情</h4>
-          {/* <ProjectGraph /> */}
+          <div className="mb-8 pr-10">
+            <p className="mb-2 text-sm font-semibold text-cyan-200">
+              项目详情
+            </p>
+            <h4 className="text-3xl font-black leading-tight">
+              {selectedDetailProject?.title ?? '项目详情'}
+            </h4>
+          </div>
+
+          {selectedDetailProject?.detail ? (
+            <div className="space-y-6">
+              <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-5 sm:p-6">
+                <h5 className="mb-4 text-xl font-bold text-white">
+                  项目概述
+                </h5>
+                <p className="indent-[2em] text-base leading-8 text-gray-300">
+                  {selectedDetailProject.detail.overview}
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-5 sm:p-6">
+                <h5 className="mb-4 text-xl font-bold text-white">
+                  项目角色
+                </h5>
+                <p className="indent-[2em] text-base leading-8 text-gray-300">
+                  {selectedDetailProject.detail.role}
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-5 sm:p-6">
+                <h5 className="mb-5 text-xl font-bold text-white">
+                  核心工作
+                </h5>
+                <div className="space-y-4">
+                  {selectedDetailProject.detail.highlights.map((highlight, index) => (
+                    <div
+                      key={highlight}
+                      className="rounded-2xl border border-white/10 bg-black/20 p-5"
+                    >
+                      <span className="mb-3 text-sm font-semibold text-cyan-200">
+                        （{index + 1}）
+                      </span>
+                      <span className="text-base leading-8 text-gray-300">
+                        {highlight}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+              <p className="text-base leading-8 text-gray-300">
+                暂未配置该项目的详细说明。
+              </p>
+            </div>
+          )}
         </motion.div>
       </div>
     </section>
   );
 }
-
-
 
 
 
