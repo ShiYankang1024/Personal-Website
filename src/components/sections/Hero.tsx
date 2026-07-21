@@ -31,7 +31,7 @@ export default function Hero() {
           className="mb-12"
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-8 text-white leading-none tracking-tight">
-            Hi, I&apos;m{' '}
+            {/* Hi, I&apos;m{' '} */}
             <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               DM Kant
             </span>
@@ -45,12 +45,12 @@ export default function Hero() {
           className="mb-16"
         >
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light mb-8 text-gray-300 tracking-wide">
-            软件开发工程师
+            个人网站
           </h2>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-light">
             {/* I create exceptional digital experiences that combine cutting-edge
             technology with stunning design */}
-            我致力于打造卓越的数字体验，将尖端科技与惊艳设计完美融合。
+            致力于打造卓越的数字体验，将尖端科技与惊艳设计完美融合。
           </p>
         </motion.div>
 
@@ -77,7 +77,7 @@ export default function Hero() {
           </a> */}
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.9, ease: 'easeOut' }}
@@ -105,7 +105,7 @@ export default function Hero() {
           >
             <Mail size={32} className="text-gray-300 hover:text-white" />
           </a>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           initial={{ opacity: 0 }}

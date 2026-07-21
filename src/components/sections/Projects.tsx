@@ -185,15 +185,15 @@ export default function Projects() {
 
               <div className="relative flex flex-col items-center">
                 {hasScreenshots ? (
-                  <div className="relative mx-auto h-[550px] w-[1150px] overflow-hidden rounded-2xl border border-white/10 bg-black/40">
-                   <div className="absolute inset-1">
-                        <Image
+                  <div className="relative mx-auto aspect-video w-full max-w-[1150px] max-h-[62vh] overflow-hidden rounded-2xl border border-white/10 bg-black/40">
+                    <div className="absolute inset-1">
+                      <Image
                         src={currentScreenshotSrc ?? ''}
-                        alt={`${selectedProject.title} preview image`}
+                        alt={`DMKant ${selectedProject.title} 预览图`}
                         fill
-                        sizes="(min-width: 960px) 1150px, 100vw"
+                        sizes="(min-width: 1280px) 1150px, calc(100vw - 64px)"
                         className="object-contain transition-transform duration-500"
-                        />
+                      />
                     </div>
                   </div>
                 ) : (
@@ -247,7 +247,7 @@ export default function Projects() {
                 <div className="aspect-video bg-gradient-to-br from-blue-500/20 to-purple-500/20 relative overflow-hidden mb-4">
                   <Image
                     src={project.screenshots?.[0] ?? project.image}
-                    alt={`${project.title} 预览图`}
+                    alt={`DMKant ${project.title} 预览图`}
                     fill
                     sizes="(min-width: 1024px) 33vw, 100vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -345,7 +345,7 @@ export default function Projects() {
                   <div className="aspect-video bg-gradient-to-br from-blue-500/20 to-purple-500/20 relative overflow-hidden">
                     <Image
                       src={project.screenshots?.[0] ?? project.image}
-                      alt={`${project.title} 预览图`}
+                      alt={`DMKant ${project.title} 预览图`}
                       fill
                       sizes="(min-width: 1024px) 33vw, 100vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -509,7 +509,6 @@ export default function Projects() {
     </section>
   );
 }
-
 
 
 

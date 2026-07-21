@@ -2,7 +2,7 @@
 
 import { useRef, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Environment, OrbitControls, ContactShadows, Html } from '@react-three/drei';
+import { OrbitControls, ContactShadows, Html } from '@react-three/drei';
 import * as THREE from 'three';
 
 interface ComputerModelProps {
@@ -283,6 +283,9 @@ export default function Computer() {
 
         {/* 增强照明 */}
         <ambientLight intensity={0.2} />
+        <hemisphereLight
+          args={['#9bdcff', '#15152a', 0.65]}
+        />
         <spotLight
           position={[10, 10, 10]}
           angle={0.15}
@@ -314,8 +317,6 @@ export default function Computer() {
           far={3}
           color="#0066ff"
         />
-
-        <Environment preset="city" />
 
         {/* 增强轨道控制 */}
         <OrbitControls
