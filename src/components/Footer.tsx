@@ -80,7 +80,7 @@ export default function Footer() {
           >
             <h4 className="text-white font-black text-2xl mb-8">快速链接</h4>
             <div className="space-y-6">
-              {['Home|主页', 'About|关于', 'Projects|项目'].map((link) => (
+              {['主页', '关于', '项目'].map((link) => (
                 <button
                   key={link}
                   onClick={() => {

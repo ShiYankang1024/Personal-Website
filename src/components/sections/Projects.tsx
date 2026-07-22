@@ -263,14 +263,14 @@ export default function Projects() {
                     >
                       <Eye size={28} className="text-white" />
                     </button>
-                    <button
+                    {/* <button
                       type="button"
                       onClick={() => handleOpenProjectDetail(project)}
                       className="p-4 bg-white/20 rounded-full hover:bg-white/30 transition-all duration-300 transform hover:scale-110"
                       aria-label={`查看 ${project.title} 项目详情`}
                     >
                       <Route size={28} className="text-white" />
-                    </button>
+                    </button> */}
                   </div>
                 </div>
 
@@ -293,8 +293,8 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  <div className="flex gap-6">
-                    {/* <a
+                  {/* <div className="flex gap-6">
+                    <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -302,7 +302,7 @@ export default function Projects() {
                     >
                       <Github size={20} />
                       <span>Code</span>
-                    </a> */}
+                    </a>
                     <a
                       href={project.live}
                       target="_blank"
@@ -312,7 +312,7 @@ export default function Projects() {
                       <ExternalLink size={20} />
                       <span>Live Demo</span>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </motion.div>
             ))}

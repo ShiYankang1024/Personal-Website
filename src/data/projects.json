@@ -1,20 +1,54 @@
 [
-  {
-    "title": "智能电网巡检系统",
-    "description": "负责系统前端框架搭建和文档撰写，参与 3D 模型交互与海康摄像机视频管理等。",
-    "technologies": ["Vue3", "Three.js", "Socket", "RTSP", "Blender"],
-    "image": "/imgs/AI1.jpg",
+    {
+    "title": "农村集体三资管理平台",
+    "description": "负责需求调研，可视化大屏、管理平台和小程序的开发工作。",
+    "technologies": ["Vue3", "UniApp", "WotUI", "Leaflet", "DataV", "Echarts"],
+    "image": "/imgs/SZ.jpg",
     "github": "https://github.com",
-    "live": "https://example.com",
+    "live": "http://111.40.188.220:1443/taa/#/login?redirect=/&params={}",
     "featured": true,
     "model": null,
-    "screenshots": ["/imgs/XJ0.jpg", "/imgs/XJ1.jpg", "/imgs/XJ2.jpg", "/imgs/XJ3.jpg", "/imgs/XJ4.jpg", "/imgs/XJ5.jpg"],
+    "screenshots": ["/imgs/SZ.jpg", "/imgs/SZ1.jpg", "/imgs/SZ2.jpg", "/imgs/SZ3.jpg", "/imgs/SZ4.jpg"],
     "detail": {
-      "overview": "项目面向电网巡检与设备管理场景，围绕变电站、输电线路、巡检点位和视频监控资源，建设可视化、可交互的智能巡检系统，提升设备状态查看、异常定位和巡检过程管理效率。",
-      "role": "主要负责前端框架搭建、页面模块开发和技术文档整理，参与 3D 模型展示、设备点位交互、海康摄像机视频接入及巡检业务页面联调工作。",
+      "overview": "项目服务于某省农村集体“三资”管理突出问题专项整治工作，围绕集体资金、资产、资源监管场景，建设数字化、可视化、全流程监管平台。平台已稳定运行三个月，并入选省级亮点项目。",
+      "role": "主要负责前期需求调研、业务流程梳理及软件开发工作，覆盖可视化大屏、管理后台和小程序。参与农村集体“三资”监管核心业务模块建设，负责 GIS 地图展示、数据可视化、表单填报、资产管理、权限控制、接口联调及上线问题排查，支撑平台于 2026 年 3 月推广使用。",
       "highlights": [
-        "基于 Vue3 和 Three.js 构建三维场景展示能力，实现模型加载、设备点位标注、场景视角控制和基础交互反馈。",
-        "参与视频监控资源管理与 RTSP 视频接入联调，配合后端接口完成摄像机列表、视频预览和巡检点位信息展示。"
+        "基于 Echarts 和 DataV 打造数字可视化大屏系统，基于Leaflet实现市-县-镇-村四级地图下钻和高精度矢量边界渲染；针对海量点位和复杂图斑，前端采用Canvas、动态抽稀与WebGL shapes分级渲染优化前端性能；后端通过地块编码复合 B-Tree 索引、geom GiST空间索引和镇级分库提升查询效率。",
+        "基于 Vite + Vue3 + Element Plus 构建高内聚、低耦合的管理后台。设计并实现了“RBAC 权限控制引擎”，精准控制到角色级、动态菜单级及组件按钮级。针对集体资产全量导出、历史资金流水等大数据量场景，采用虚拟滚动（Virtual Scrolling）、数据切片（Time Slicing）、 Keep-Alive 组件状态缓存及图片懒加载策略，解决万级数据网格DOM 造成的浏览器卡顿问题。",
+        "使用 UniApp + WotUI 构建跨端小程序，并基于 NestJS + TypeScript 搭建后端微服务，集成OCR +百度AI接口，实现土地确权书、合同文件的自动识别、结构化提取与数据校验，录入效率提升80%；",
+        "利用 Codex和Trae编程助手，对旧版 Vue2 + JS + Webpack 项目进行快速重构，短时间内完成核心模块向Vue3 + TypeScript + Vite管理平台的适配和嵌入，显著提升旧项目改造效率与新平台集成速度。"
+      ]
+    }
+  },
+    {
+    "title": "林草局以图管资系统",
+    "description": "负责前后端全栈开发工作，涉及地图、数据可视化和表单填报等模块。",
+    "technologies": ["Vue3", "UniApp", "WotUI", "Leaflet", "DataV", "Echarts"],
+    "image": "/imgs/LC3.jpg",
+    "github": "https://github.com",
+    "live": "http://111.40.188.220:1443/lincao/#/login?redirect=/&params={}",
+    "featured": true,
+    "model": null,
+    "screenshots": ["/imgs/LC3.jpg", "/imgs/LC1.jpg", "/imgs/LC2.jpg"],
+    "detail": {
+     
+    }
+  },
+  {
+    "title": "农补通",
+    "description": "负责前期前端开发，后期部署维护",
+    "technologies": ["Vue2", "Element UI", "Webpack"],
+    "image": "/imgs/NBT.jpg",
+    "github": "https://github.com",
+    "live": "http://111.40.188.220:1443/login?redirect=%2Findex",
+    "featured": true,
+    "model": null,
+    "screenshots": ["/imgs/NBT.jpg"],
+    "detail": {
+      "overview": "项目服务于某市农业补贴填报和发放场景，围绕农业补贴业务流程，建设数字化、可视化、全流程监管平台。平台已稳定运行三个月，并入选市级亮点项目。",
+      "role": "主要负责前端开发和部署维护。",
+      "highlights": [
+        
       ]
     }
   },
@@ -24,7 +58,6 @@
     "technologies": ["Vue3", "Three.js", "Echarts", "TailWindCss", "Canvas"],
     "image": "/imgs/AI2.jpg",
     "github": "https://github.com/DongMenKant/canvas-select-plus",
-    "live": "http://train.aircas.icu/login?redirect=/&params={}",
     "featured": true,
     "model": null,
     "screenshots": ["/imgs/AI0.jpg", "/imgs/AI1.jpg", "/imgs/AI2.jpg", "/imgs/AI3.jpg", "/imgs/AI4.jpg", "/imgs/AI5.jpg"],
@@ -38,24 +71,36 @@
       ]
     }
   },
-  {
-    "title": "农村集体三资管理平台",
-    "description": "负责前期需求调研，可视化大屏、管理平台和小程序的前端开发工作。",
-    "technologies": ["Vue3", "UniApp", "WotUI", "Leaflet", "DataV", "Echarts"],
-    "image": "/imgs/SZ1.jpg",
-    "github": "https://github.com",
-    "live": "http://111.40.188.220:1443/taa/#/login?redirect=/&params={}",
+    {
+    "title": "星穹脑海",
+    "description": "负责游戏设计与逻辑开发，实现脑科学严肃游戏的关卡玩法和交互体验。",
+    "technologies": ["Unity", "C#", "小程序"],
+    "image": "/imgs/XN2.jpg",
+    "github": "https://github.com/DongMenKant/canvas-select-plus",
     "featured": true,
     "model": null,
-    "screenshots": ["/imgs/SZ1.jpg", "/imgs/SZ2.png", "/imgs/SZ3.png", "/imgs/SZ4.png"],
+    "screenshots": [ "/imgs/XN2.jpg", "/imgs/XN3.jpg", "/imgs/XN1.jpg"],
     "detail": {
-      "overview": "项目服务于某省农村集体“三资”管理突出问题专项整治工作，围绕集体资金、资产、资源监管场景，建设数字化、可视化、全流程监管平台。平台已稳定运行三个月，并入选省级亮点项目。",
-      "role": "主要负责前期需求调研、业务流程梳理及软件开发工作，覆盖可视化大屏、管理后台和小程序。参与农村集体“三资”监管核心业务模块建设，负责 GIS 地图展示、数据可视化、表单填报、资产管理、权限控制、接口联调及上线问题排查，支撑平台于 2026 年 3 月推广使用。",
+      "overview": "本项目是一款基于众包科学的脑科学严肃游戏。项目首创将微观神经元结构拟态为宏观星系，将复杂的神经标注转化为低门槛的空间寻路关卡。通过“盲盒+卡牌”的趣味激励体系提升玩家留存。项目在普惠脑科学知识的同时，旨在攻克传统数据标注痛点，实现“游戏赋能科研”。",
+      "role": "主要负责游戏的 Unity 客户端开发工作，配合 UI/UX 设计师搭建页面和玩法设计。",
+      "highlights": []
+    }
+  },
+    {
+    "title": "智能电网巡检系统",
+    "description": "负责系统前端框架搭建和文档撰写，参与 3D 模型交互与海康摄像机视频管理等。",
+    "technologies": ["Vue3", "Three.js", "Socket", "RTSP", "Blender"],
+    "image": "/imgs/AI1.jpg",
+    "github": "https://github.com",
+    "featured": true,
+    "model": null,
+    "screenshots": ["/imgs/XJ0.jpg", "/imgs/XJ1.jpg", "/imgs/XJ2.jpg", "/imgs/XJ3.jpg", "/imgs/XJ4.jpg", "/imgs/XJ5.jpg"],
+    "detail": {
+      "overview": "项目面向电网巡检与设备管理场景，围绕变电站、输电线路、巡检点位和视频监控资源，建设可视化、可交互的智能巡检系统，提升设备状态查看、异常定位和巡检过程管理效率。",
+      "role": "主要负责前端框架搭建、页面模块开发和技术文档整理，参与 3D 模型展示、设备点位交互、海康摄像机视频接入及巡检业务页面联调工作。",
       "highlights": [
-        "基于 Echarts 和 DataV 打造数字可视化大屏系统，基于Leaflet实现市-县-镇-村四级地图下钻和高精度矢量边界渲染；针对海量点位和复杂图斑，前端采用Canvas、动态抽稀与WebGL shapes分级渲染优化前端性能；后端通过地块编码复合 B-Tree 索引、geom GiST空间索引和镇级分库提升查询效率。",
-        "基于 Vite + Vue3 + Element Plus 构建高内聚、低耦合的管理后台。设计并实现了“RBAC 权限控制引擎”，精准控制到角色级、动态菜单级及组件按钮级。针对集体资产全量导出、历史资金流水等大数据量场景，采用虚拟滚动（Virtual Scrolling）、数据切片（Time Slicing）、 Keep-Alive 组件状态缓存及图片懒加载策略，解决万级数据网格DOM 造成的浏览器卡顿问题。",
-        "使用 UniApp + WotUI 构建跨端小程序，并基于 NestJS + TypeScript 搭建后端微服务，集成OCR +百度AI接口，实现土地确权书、合同文件的自动识别、结构化提取与数据校验，录入效率提升80%；",
-        "利用 Codex和Trae编程助手，对旧版 Vue2 + JS + Webpack 项目进行快速重构，短时间内完成核心模块向Vue3 + TypeScript + Vite管理平台的适配和嵌入，显著提升旧项目改造效率与新平台集成速度。"
+        "基于 Vue3 和 Three.js 构建三维场景展示能力，实现模型加载、设备点位标注、场景视角控制和基础交互反馈。",
+        "参与视频监控资源管理与 RTSP 视频接入联调，配合后端接口完成摄像机列表、视频预览和巡检点位信息展示。"
       ]
     }
   },
@@ -97,6 +142,24 @@
       ]
     }
   },
+    {
+    "title": "MainMap",
+    "description": "基于 Leaflet + Echarts 构建的WebGis组件，支持在地图上进行数据可视化和交互操作。",
+    "technologies": ["Leaflet", "Echarts", "L7"],
+    "image": "/imgs/LC2.jpg",
+    "github": "",
+    "live": "",
+    "featured": false,
+    "model": "",
+    "screenshots": ["/imgs/LC2.jpg","/imgs/LC1.jpg"],
+    "detail": {
+      "overview": "",
+      "role": "",
+      "highlights": [
+        
+      ]
+    }
+  },
   {
     "title": "UE 搭建电影级场景",
     "description": "使用 UE5.5.2 和 Tripo3D 生成模型，搭建电影级公路场景。",
@@ -125,7 +188,7 @@
     "live": "https://shiyankang1024.github.io/ShootGameWebGL/",
     "featured": false,
     "model": null,
-    "screenshots": ["/imgs/ShootGame1.png", "/imgs/ShootGame2.png", "/imgs/ShootGame3.png", "/imgs/ShootGame4.png", "/imgs/ShootGame5.png", "/imgs/ShootGame6.png", "/imgs/ShootGame7.png"],
+    "screenshots": ["/imgs/ShootGame1.jpg", "/imgs/ShootGame2.jpg", "/imgs/ShootGame3.jpg", "/imgs/ShootGame4.jpg", "/imgs/ShootGame5.jpg", "/imgs/ShootGame6.jpg", "/imgs/ShootGame7.jpg"],
     "detail": {
       "overview": "项目是基于 Unity 开发的第三人称 3D 射击闯关游戏，包含角色控制、敌人行为、关卡流程和 WebGL 发布体验。",
       "role": "负责玩法逻辑开发、角色控制、敌人配置、关卡组织和 WebGL 构建发布，使用 C# 实现核心交互逻辑。",
@@ -139,12 +202,12 @@
     "title": "《无尽幸存者》—2D类幸存者游戏",
     "description": "类幸存者肉鸽游戏，2D像素风，基于QFramework框架开发。",
     "technologies": ["Unity", "C#"],
-    "image": "/imgs/EndlessSurvivors.png",
+    "image": "/imgs/EndlessSurvivors.jpg",
     "github": "",
     "live": "",
     "featured": false,
     "model": null,
-    "screenshots": ["/imgs/EndlessSurvivors.png", "/imgs/EndlessSurvivors1.png"],
+    "screenshots": ["/imgs/EndlessSurvivors.jpg", "/imgs/EndlessSurvivors1.jpg"],
     "detail": {
       "overview": "项目是 2D 像素风类幸存者游戏练习，围绕角色成长、敌人刷新、技能选择和持续战斗体验构建基础玩法。",
       "role": "负责 Unity 端玩法逻辑、角色控制、敌人生成、技能系统和基础 UI 流程开发，基于 QFramework 组织模块结构。",
